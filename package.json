@@ -11,13 +11,13 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "preinstall": "npm install -g @angular/cli",
-    "postinstall": "ng build --aot -prod",
+    "postinstall": "npm install && ng build --aot -prod",
     "deploy": "git push origin master && git push heroku master"
   },
   "private": true,
   "dependencies": {
     "typescript": "~2.4.2",
-    "@angular/cli": "1.2.1",
+    "@angular/cli": "1.3.0",
     "@angular/compiler-cli": "^4.0.0",
     "@angular/animations": "^4.0.0",
     "@angular/common": "^4.0.0",
